@@ -21,6 +21,8 @@ class Entregable(models.Model):
     fecha_entrega = models.DateField()
     entregado = models.BooleanField()
 
+class Pepito(models.Model):
+    ejemplo = models.CharField(max_length= 50)
 
 ##Cada vez que creemos una nueva clase debemos correr make manage.py make migrations y migrate para que se guarde la base de datos
 
